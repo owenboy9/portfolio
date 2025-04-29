@@ -6,10 +6,12 @@ import Code from './pages/Code/Page';
 import Contact from './pages/Contact/Page';
 import Cinema from './pages/Cinema/Page';
 import Literature from './pages/Literature/Page';
+import './App.css';
+
 
 function App() {
   return (
-    <Router basename="/">
+    <Router basename="/portfolio">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
