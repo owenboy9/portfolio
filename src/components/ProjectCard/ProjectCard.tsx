@@ -11,9 +11,8 @@ const ProjectCard = ({ project }: Props) => {
       style={{
             borderRadius: "1rem", // makes sure it really applies
             display: "block",
-            boxShadow: "3px 3px 7px rgba(0, 0, 0, 0.64)", // optional extra
-            border: "2px solid rgba(40, 40, 41, 0.25)", // Tailwind's neutral-700
-            backgroundColor: "rgba(20, 14, 82, 0.64)", // Tailwind's neutral-100
+            boxShadow: "2px 2px 2pxrgba(0, 0, 0, 0.25))", // optional extra
+            border: "2.5px dotted rgb(102, 102, 102)", // Tailwind's neutral-700
           }}
     >
       <a
@@ -36,10 +35,10 @@ const ProjectCard = ({ project }: Props) => {
       </a>
       <div className="text-black font-mono text-sm text-center mt-2">
         <p className="text-xs text-gray-600 mb-1"
-        style={{ fontSize: '1.3rem', color: 'lightgrey' }}
+        style={{ fontSize: '1.3rem', paddingLeft: '0.5rem', paddingRight: '0.5rem' }}
         >{project.date}</p>
         <p
-        style={{ fontSize: '1.3rem', color: 'lightgrey', paddingLeft: '0.5rem', paddingRight: '0.5rem' }}
+        style={{ fontSize: '1.3rem',  paddingLeft: '0.5rem', paddingRight: '0.5rem' }}
         >{project.description}</p>
       </div>
     </div>

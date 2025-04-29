@@ -24,10 +24,10 @@ export const texts: Text[] = [
   },
   {
     type: "home",
-    description: "hi! welcome to explore all the different chapters i have set up for you here.",
+    description: "welcome to explore all the different chapters i have set up for you here.",
   },
   {
     type: "literature",
-    description: "i have dedicated most of my life to literature. be it as a literary translator, editor of a literary magazine ('literatura na świecie'), or a literary scholar. i have published a bunch of literary translation to polish, some reviews and articles, and a book. what i care about is how the flesh of language carries meaning-creating potential. i am a new materialist, obviously. currently, i am working on a book (no idea what genre to call it) where the text is an inherent part of a gender transition.",
+    description: "i have dedicated most of my life to literature. be it as a literary translator, editor of a  magazine, or scholar. i have published a bunch of literary translations, some reviews and articles, and a book. what i care about is how the flesh of language carries meaning-creating potential. i am a new materialist, obviously. currently, i am working on a book (no idea what genre to assign to it) where the text is an inherent part of a gender transition.",
   },
 ];
