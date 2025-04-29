@@ -1,8 +1,8 @@
 // src/data/projects.ts
 
-import cakery from "/assets/projects/cakery.png";
+import cakery from "/assets/projects/cakery.jpg";
 import casino from "/assets/projects/casino.png";
-import mysite from "/assets/projects/mysite.png";
+import mysite from "/assets/projects/mysite.jpeg";
 import fleshmatterslong from "/assets/projects/fleshmatterslong.png";
 import fleshmattersshort from "/assets/projects/fleshmattersshort.png";
 import resume from "/assets/projects/resume.png";
