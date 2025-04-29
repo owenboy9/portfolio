@@ -1,6 +1,9 @@
 import {texts} from '../../data/text.ts';
+import {projects} from '../../data/projects.ts';
+import ProjectCard from '../../components/ProjectCard/ProjectCard.tsx';
 
 const code = texts.find((item) => item.type === 'code');
+const codeProjects = projects.filter(p => p.type === 'code');
 
 const Code = () => {
   return (
@@ -13,6 +16,13 @@ const Code = () => {
     >
     {code?.description}
     </p>
+    <h3 className="text-2xl font-bold mb-4">
+      code projects
+    </h3>
+    {codeProjects.map((project, idx) => (
+      <ProjectCard key={idx} project={project} />
+      ))
+    }
   </div>
   );
 };
