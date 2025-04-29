@@ -19,10 +19,12 @@ const Code = () => {
     <h3 className="text-2xl font-bold mb-4">
       code projects
     </h3>
-    {codeProjects.map((project, idx) => (
-      <ProjectCard key={idx} project={project} />
-      ))
-    }
+    <div className="grid grid-cols-3 sm:grid-cols-1 lg:grid-cols-3 gap-x-[1.rem] gap-y-[2rem] mt-4">
+      {codeProjects.map((project, idx) => (
+        <ProjectCard key={idx} project={project} />
+        ))
+      }
+    </div>
   </div>
   );
 };

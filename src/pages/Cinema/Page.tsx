@@ -16,10 +16,11 @@ const Cinema = () => {
     <h3 className="text-2xl font-bold mb-4">
       film projects
     </h3>
-    {filmProjects.map((project, idx) => (
-      <ProjectCard key={idx} project={project} />
-      ))
-    }
+      <div className="grid grid-cols-3 sm:grid-cols-1 lg:grid-cols-3 gap-6 mt-4">
+        {filmProjects.map((project, idx) => (
+          <ProjectCard key={idx} project={project} />
+        ))}
+      </div>
   </div>
   );
 };
