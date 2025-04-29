@@ -1,4 +1,5 @@
 import { Project } from "../../data/projects";
+import ghlogo from "/assets/projects/ghlogo.png"; 
 
 interface Props {
   project: Project;
@@ -12,7 +13,7 @@ const ProjectCard = ({ project }: Props) => {
             borderRadius: "1rem", // makes sure it really applies
             display: "block",
             boxShadow: "2px 2px 2pxrgba(0, 0, 0, 0.25))", // optional extra
-            border: "2.5px dotted rgb(102, 102, 102)", // Tailwind's neutral-700
+            border: "2.5px dotted rgb(102, 102, 102)", 
           }}
     >
       <a
@@ -35,11 +36,27 @@ const ProjectCard = ({ project }: Props) => {
       </a>
       <div className="text-black font-mono text-sm text-center mt-2">
         <p className="text-xs text-gray-600 mb-1"
-        style={{ fontSize: '1.3rem', paddingLeft: '0.5rem', paddingRight: '0.5rem' }}
+        style={{ fontSize: '1.2rem', paddingLeft: '0.5rem', paddingRight: '0.5rem' }}
         >{project.date}</p>
         <p
-        style={{ fontSize: '1.3rem',  paddingLeft: '0.5rem', paddingRight: '0.5rem' }}
+        style={{ fontSize: '1.2rem',  paddingLeft: '0.5rem', paddingRight: '0.5rem' }}
         >{project.description}</p>
+        {/* GitHub logo (conditionally rendered) */}
+        {project.ghlink && (
+          <a
+            href={project.ghlink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 flex justify-center"
+          >
+            <img
+              src={ghlogo}
+              alt="GitHub repository"
+              className="w-[2rem]" // smaller size
+              style={{ display: "block" }}
+            />
+          </a>
+        )}
       </div>
     </div>
   );

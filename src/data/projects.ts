@@ -14,6 +14,7 @@ export interface Project {
   link: string;
   image: string;
   type: "code" | "film";
+  ghlink: string;
 }
 
 export const projects: Project[] = [
@@ -21,6 +22,7 @@ export const projects: Project[] = [
     date: "2025",
     description: "a simple cute bakery-themed web project",
     link: "https://owenboy9.github.io/cakery/",
+    ghlink: "https://github.com/owenboy9/cakery",
     image: cakery,
     type: "code",
   },
@@ -28,6 +30,7 @@ export const projects: Project[] = [
     date: "2025",
     description: "casino slot machine — a fun casino-themed web project",
     link: "https://owenboy9.github.io/casino/",
+    ghlink: "https://github.com/owenboy9/casino",
     image: casino,
     type: "code",
   },
@@ -35,6 +38,7 @@ export const projects: Project[] = [
     date: "2025",
     description: "my resume website",
     link: "https://owenboy9.github.io/frontend-exercises/",
+    ghlink: "https://github.com/owenboy9/frontend-exercises",
     image: resume,
     type: "code",
   },
@@ -42,6 +46,7 @@ export const projects: Project[] = [
     date: "2024",
     description: "my poetic gender identity website",
     link: "https://owenboy9.github.io/my-site/",
+    ghlink: "https://github.com/owenboy9/my-site",
     image: mysite,
     type: "code",
   },
@@ -49,6 +54,7 @@ export const projects: Project[] = [
     date: "2024",
     description: "gui and test flow for a research project at arduino",
     link: "",
+    ghlink: "https://github.com/dcuartielles/temperature_chamber",
     image: arduino,
     type: "code",
   },
@@ -56,6 +62,7 @@ export const projects: Project[] = [
     date: "2022",
     description: "flesh matters: short film, unabridged version",
     link: "https://www.youtube.com/watch?v=6Pxib8WEsRs",
+    ghlink: "",
     image: fleshmatterslong,
     type: "film",
   },
@@ -63,6 +70,7 @@ export const projects: Project[] = [
     date: "2023",
     description: "flesh matters: short film, film festival version",
     link: "https://www.youtube.com/watch?v=WeAi7Yrtfic&t=6s",
+    ghlink: "",
     image: fleshmattersshort,
     type: "film",
   },

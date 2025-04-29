@@ -12,8 +12,7 @@ const navItems = [
 
 const Sidebar = () => {
   return (
-    <aside className="w-48 min-h-screen mt-12 ml-36 p-36 bg-white/70 backdrop-blur-md"
-    style={{ marginTop: '7rem', marginLeft: '4rem' }}
+    <aside className="fixed top-[9rem] left-[2rem] w-48 h-screen p-12 bg-white/70 backdrop-blur-md z-50"
     >
       
       <nav className="flex flex-col gap-4 text-base font-bold font-mono">

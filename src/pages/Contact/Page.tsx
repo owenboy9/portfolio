@@ -4,7 +4,7 @@ const contact = texts.find((item) => item.type === 'contact');
 const Contact = () => {
   return (
   <div
-  style={{ marginTop: '2rem', marginLeft: '5rem', marginRight: '9rem', textAlign: 'justify' }}
+  style={{ marginTop: '2rem', marginLeft: '15rem', marginRight: '9rem', textAlign: 'justify' }}
   >
     <h1>reach out to me</h1>
     <p

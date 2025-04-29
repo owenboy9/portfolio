@@ -5,7 +5,7 @@ const home = texts.find((item) => item.type === 'home');
 const Home = () => {
   return (
   <div
-  style={{ marginTop: '2rem', marginLeft: '5rem', marginRight: '9rem', textAlign: 'justify'}}
+  style={{ marginTop: '2rem', marginLeft: '15rem', marginRight: '9rem', textAlign: 'justify'}}
   >
     <h1>owen kraus</h1>
     <p

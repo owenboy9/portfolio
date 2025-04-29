@@ -5,7 +5,7 @@ const about = texts.find((item) => item.type === 'about');
 const About = () => {
   return (
   <div
-  style={{ marginTop: '2rem', marginLeft: '5rem', marginRight: '9rem', textAlign: 'justify' }}
+  style={{ marginTop: '2rem', marginLeft: '15rem', marginRight: '9rem', textAlign: 'justify' }}
   >
     <h1>about me</h1>
     <p

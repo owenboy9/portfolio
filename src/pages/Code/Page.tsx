@@ -8,7 +8,7 @@ const codeProjects = projects.filter(p => p.type === 'code');
 const Code = () => {
   return (
   <div
-  style={{ marginTop: '2rem', marginLeft: '5rem', marginRight: '9rem', textAlign: 'justify'  }}
+  style={{ marginTop: '2rem', marginLeft: '15rem', marginRight: '9rem', textAlign: 'justify'  }}
   >
     <h1>my code</h1>
     <p
