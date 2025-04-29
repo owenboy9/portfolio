@@ -1,7 +1,9 @@
 const Home = () => {
   return (
-  <div>
-
+  <div
+  style={{ marginTop: '2rem', marginLeft: '5rem' }}
+  >
+    <h1>owen kraus</h1>
   </div>
   );
 };
