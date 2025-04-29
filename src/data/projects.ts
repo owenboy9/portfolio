@@ -22,13 +22,13 @@ export const projects: Project[] = [
   },
   {
     date: "2025",
-    description: "my resume web site",
+    description: "my resume website",
     link: "https://owenboy9.github.io/frontend-exercises/",
     type: "code",
   },
   {
     date: "2024",
-    description: "my poetic gender identity web site",
+    description: "my poetic gender identity website",
     link: "https://owenboy9.github.io/my-site/",
     type: "code",
   },

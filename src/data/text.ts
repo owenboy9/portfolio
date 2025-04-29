@@ -16,7 +16,7 @@ export const texts: Text[] = [
   },
   {
     type: "code",
-    description: "having dropped out of academia in december 2021, after my 2-year postdoc at stanford, i started learning to code. i know, quite a shift! but as i was already reinventing myself from scratch, having just realized i was trans, why not think big? and i wans't wrong: i find coding to be an immense source of joy: it's brainy, creative, and i have a sense i will never be done learning.",
+    description: "having dropped out of academia in december 2021, after my 2-year postdoc at stanford, i started learning to code. i know, quite a shift! but as i was already reinventing myself from scratch, having just realized i was trans, why not think big? and i wasn't wrong. i find coding to be an immense source of joy: it's brainy, creative, and i have a sense i will never be done learning. using it wisely, i can, actually, change the world. what else is there to wish for?",
   },
   {
     type: "contact",
