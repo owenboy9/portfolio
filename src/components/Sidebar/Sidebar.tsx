@@ -24,7 +24,7 @@ const Sidebar = () => {
             className={({ isActive }: { isActive: boolean }) =>
           `px-2 py-1 rounded transition-transform transform
           ${isActive ? 'text-black font-semibold' : 'text-black'}
-          hover:scale-105 hover:bg-black/5 no-underline text-shadow-hover`
+          hover:scale-106 hover:bg-black/5 no-underline text-shadow-hover`
         }
         style={{ color: 'black', textDecoration: 'none' }}
           >

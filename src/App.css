@@ -15,5 +15,5 @@ body {
 
 /* src/App.css or any CSS file */
 .text-shadow-hover:hover {
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Customize the shadow as per your preference */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.63); 
 }
