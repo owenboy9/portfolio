@@ -7,7 +7,13 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
   margin: 0;
-  font-family: "Libre Barcode 39 Extended Text", system-ui;
+  font-family: "Megrim", system-ui;
   font-weight: 400;
   font-style: normal;
+  font-size: 1.8rem;
+}
+
+/* src/App.css or any CSS file */
+.text-shadow-hover:hover {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Customize the shadow as per your preference */
 }

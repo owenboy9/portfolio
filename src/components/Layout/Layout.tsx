@@ -1,11 +1,13 @@
+// src/components/Layout/Layout.tsx
 import { Outlet } from 'react-router-dom';
+import Sidebar from '../Sidebar/Sidebar';
 
 const Layout = () => {
   return (
-    <div className="min-h-screen">
-      {/* Add your Header and Footer components here later */}
-      <main>
-        <Outlet /> {/* This is where the content of each page will show */}
+    <div className="flex">
+      <Sidebar />
+      <main className="ml-48 p-6 w-full">
+        <Outlet />
       </main>
     </div>
   );
