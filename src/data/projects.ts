@@ -46,6 +46,13 @@ export const projects: Project[] = [
     type: "code",
   },
   {
+    date: "2024",
+    description: "gui and test flow for a research project at arduino",
+    link: "",
+    image: arduino,
+    type: "code",
+  },
+  {
     date: "2022",
     description: "flesh matters: short film, unabridged version",
     link: "https://www.youtube.com/watch?v=6Pxib8WEsRs",
