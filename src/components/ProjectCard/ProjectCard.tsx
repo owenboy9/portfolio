@@ -8,21 +8,23 @@ interface Props {
 const ProjectCard = ({ project }: Props) => {
   return (
     <div
-      className="w-[250px] h-[330px] rounded-2xl border-[2px] border-neutral-700 bg-transparent p-4 flex flex-col items-center"
+      className="w-[250px] h-[330px] rounded-2xl p-4 flex flex-col items-center
+                transition-all duration-300
+                hover:border-[2.5px] hover:[border-style:dotted] hover:border-[rgb(102,102,102)]"
       style={{
-            borderRadius: "1rem", // makes sure it really applies
-            display: "block",
-            boxShadow: "2px 2px 2pxrgba(0, 0, 0, 0.25))", // optional extra
-            border: "2.5px dotted rgb(102, 102, 102)", 
-          }}
+        border: "none",
+        boxShadow: "2px 2px 7px rgba(0, 0, 0, 0.16)",
+        borderRadius: "1rem",
+      }}
     >
+
+
       <a
         href={project.link}
         target="_blank"
         rel="noopener noreferrer"
         className="block"
       >
-        
         <img
           src={project.image}
           alt={project.description}

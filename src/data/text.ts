@@ -8,7 +8,7 @@ export interface Text {
 export const texts: Text[] = [
   {
     type: "about",
-    description: "i am a software developer, and a recovering academic. my background is in literature, and i sometimes make art films. i have founded and run an independend arthouse cinema in malmö, sweden. i have also worked as a bicycle mechanic, barista, and actor-ish, just to name a few perspectives i have explored. i care about community, and i currently work part-time at rfsl's checkpoint, testing msm and trans people for hiv and syphilis. i enjoy running. i am an aquarius, which, according to an ex of mine, means i am obsessed with freedom. well, i am.",
+    description: "i am a software developer, and a recovering academic. my background is in literature, and i sometimes make art films. i have founded and run an independend arthouse cinema in malmö, sweden. i have also worked as a bicycle mechanic, barista, and actor-ish, just to name a few. i care about community, and i currently work part-time at rfsl's checkpoint, testing msm and trans people for hiv and syphilis. i enjoy running. i am an aquarius, which, according to an ex of mine, means i'm obsessed with freedom. well, i am.",
   },
   {
     type: "cinema",
@@ -20,7 +20,7 @@ export const texts: Text[] = [
   },
   {
     type: "contact",
-    description: "i am not huge on social media. however, you can find me on linkedin, and, of course, check out my github repos. you are more than welcome to send me a message through the form below",
+    description: "i am not huge on social media. however, you can find me on linkedin, and, of course, check out my github repos. you are more than welcome to send me a message via the form below.",
   },
   {
     type: "home",
@@ -28,6 +28,6 @@ export const texts: Text[] = [
   },
   {
     type: "literature",
-    description: "i have dedicated most of my life to literature. be it as a literary translator, editor of a  magazine, or scholar. i have published a bunch of literary translations, some reviews and articles, and a book. what i care about is how the flesh of language carries meaning-creating potential. i am a new materialist, obviously. currently, i am working on a book (no idea what genre to assign to it) where the text is an inherent part of a gender transition.",
+    description: "i have dedicated most of my life to literature. be it as a literary translator, editor of a  magazine, or scholar. i have published a bunch of literary translations, some reviews and articles, and a book. what i care about is how the flesh of text carries meaning-creating potential. i am a new materialist, obviously. currently, i am working on a book (no idea what genre to assign to it) where language is an inherent part of a gender transition.",
   },
 ];

@@ -28,7 +28,7 @@ export const projects: Project[] = [
   },
   {
     date: "2025",
-    description: "casino slot machine — a fun casino-themed web project",
+    description: "casino slot machine — a fun casino-themed web project with sound",
     link: "https://owenboy9.github.io/casino/",
     ghlink: "https://github.com/owenboy9/casino",
     image: casino,
