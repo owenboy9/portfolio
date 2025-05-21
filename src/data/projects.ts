@@ -29,7 +29,7 @@ export const projects: Project[] = [
   },
   {
     date: "2025",
-    description: "fun daily planner with a randomization to help with your procrastination tendencies",
+    description: "bubbly spin daily planner to help trick procrastination",
     link: "https://zereis.github.io/Event-planner/#/spin",
     ghlink: "https://github.com/Zereis/Event-planner",
     image: spin,
@@ -77,7 +77,7 @@ export const projects: Project[] = [
   },
   {
     date: "2023",
-    description: "flesh matters: short film, film festival version",
+    description: "flesh matters: short film, festival version",
     link: "https://www.youtube.com/watch?v=WeAi7Yrtfic&t=6s",
     ghlink: "",
     image: fleshmattersshort,

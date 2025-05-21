@@ -67,6 +67,7 @@ const ContactForm = () => {
           style={{
             borderRadius: "1rem",
             fontSize: '1.1rem',
+            fontWeight: 'bold',
           }}
         />
         <input
@@ -79,6 +80,7 @@ const ContactForm = () => {
           style={{
             borderRadius: "1rem",
             fontSize: '1.1rem',
+            fontWeight: 'bold',
           }}
         />
         <textarea
@@ -94,6 +96,7 @@ const ContactForm = () => {
             textAlign: "center",
             paddingTop: "3rem",
             fontSize: '1.1rem',
+            fontWeight: 'bold',
           }}
         />
         <button
