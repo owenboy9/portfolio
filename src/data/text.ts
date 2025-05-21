@@ -12,7 +12,7 @@ export const texts: Text[] = [
   },
   {
     type: "cinema",
-    description: "hypnos theatre is an independent arthouse cinema in malmö, sweden. by best friend, paul kraus, and i built it in january 2019, and have been running it since. we also founded the non-profit film association 'film i malmö' that allows us to make great cinema available to people outside the dominant market economy. film i malmö is fully volunteer-run. at hypnos, beside screening films, we host amazing concert, performances, and talks. we also have a café area, where friendships emerge. on my own account, i have made one short film called 'flesh matters.' it is a poetic exploration of gender and one's body relationship to the world.",
+    description: "hypnos theatre is an independent arthouse cinema in malmö, sweden. my best friend, paul kraus, and i built it in january 2019, and have been running it since. we also founded the non-profit film association 'film i malmö' that allows us to make great cinema available to people outside the dominant market economy. film i malmö is fully volunteer-run. at hypnos, beside screening films, we host amazing concert, performances, and talks. we also have a café area, where friendships emerge. on my own account, i have made one short film called 'flesh matters.' it is a poetic exploration of gender and one's body relationship to the world.",
   },
   {
     type: "code",
