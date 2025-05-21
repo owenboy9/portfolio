@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useForm, ValidationError } from '@formspree/react';
 
 const ContactForm = () => {
   const [email, setEmail] = useState("");
@@ -7,33 +8,50 @@ const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isThankYou, setIsThankYou] = useState(false);
 
-  const submitForm = (e: React.FormEvent) => {
+  const submitForm = async (e: React.FormEvent) => {
     e.preventDefault();
-
+  
     if (!email || !name || !message) {
       alert("you have missed some fields here ♡");
       return;
     }
-
-    console.log("Email:", email);
-    console.log("Name:", name);
-    console.log("Message:", message);
-
-    setEmail("♡");
-    setName("♡");
-    setMessage("thank you for your message\n♡");
-    setIsSubmitted(true);
-    setIsThankYou(true);
-
-    setTimeout(() => {
-      setEmail("");
-      setName("");
-      setMessage("");
-      setIsSubmitted(false);
-      setIsThankYou(false);
-    }, 3000);
+  
+    try {
+      const response = await fetch("https://formspree.io/f/mqaqjvdz", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          email,
+          name,
+          message
+        })
+      });
+  
+      if (response.ok) {
+        setEmail("♡");
+        setName("♡");
+        setMessage("thank you for your message\n♡");
+        setIsSubmitted(true);
+        setIsThankYou(true);
+  
+        setTimeout(() => {
+          setEmail("");
+          setName("");
+          setMessage("");
+          setIsSubmitted(false);
+          setIsThankYou(false);
+        }, 3000);
+      } else {
+        alert("something went wrong. please try again ♡");
+      }
+    } catch (err) {
+      console.error("Form error:", err);
+      alert("something went wrong. please try again ♡");
+    }
   };
-
+  
   return (
     <div className="flex flex-col items-center px-[10rem] pt-8 pb-12 text-black font-[inherit]">
       <form
