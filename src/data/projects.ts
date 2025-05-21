@@ -29,7 +29,7 @@ export const projects: Project[] = [
   },
   {
     date: "2025",
-    description: "bubbly daily planner to help trick procrastination (sound).",
+    description: "bubbly daily planner to help trick procrastination (sound). add activities in the calendar to be able to use the spinning wheel",
     link: "https://zereis.github.io/Event-planner/#/spin",
     ghlink: "https://github.com/Zereis/Event-planner",
     image: spin,
