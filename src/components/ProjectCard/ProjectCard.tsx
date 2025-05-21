@@ -1,5 +1,7 @@
 import { Project } from "../../data/projects";
 import ghlogo from "/assets/projects/ghlogo.png"; 
+import dot_bg from "/assets/projects/dot_bg.avif"; // background image
+
 
 interface Props {
   project: Project;
@@ -13,8 +15,13 @@ const ProjectCard = ({ project }: Props) => {
                 hover:border-[2.5px] hover:[border-style:dotted] hover:border-[rgb(102,102,102)]"
       style={{
         border: "none",
-        boxShadow: "2px 2px 7px rgba(0, 0, 0, 0.16)",
         borderRadius: "1rem",
+        height: "fit-content",
+        paddingBottom: "1rem",
+        backgroundImage: `url(${dot_bg})`,
+        backgroundSize: "cover",     // or "contain" if you want the whole image
+        backgroundRepeat: "repeat",  // or "no-repeat" depending on the image
+        backgroundPosition: "center",
       }}
     >
 

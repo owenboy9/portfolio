@@ -4,6 +4,7 @@ import ProjectCard from '../../components/ProjectCard/ProjectCard.tsx';
 import hypnos from "/assets/projects/hypnos.webp";
 import hypnos_logo from "/assets/projects/hypnos_logo.webp";
 import logo_fim from "/assets/projects/logo_fim.webp";
+import dot_bg from "/assets/projects/dot_bg.avif"; // background image
 
 const filmProjects = projects.filter(p => p.type === 'film');
 const cinema = texts.find((item) => item.type === 'cinema');
@@ -33,7 +34,18 @@ const Cinema = () => {
       hypnos theatre
     </h3>
     <div className="hypnos"
-      style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", marginBottom: "1rem", gap: "4rem" }}
+      style={{ display: "flex", flexDirection: "row", 
+      alignItems: "center", 
+      justifyContent: "center", marginBottom: "1rem", 
+      gap: "4rem",
+      border: "none",
+      borderRadius: "1rem",
+      paddingTop: "1rem",
+      height: "fit-content",
+      backgroundImage: `url(${dot_bg})`,
+      backgroundSize: "auto",     // or "contain" if you want the whole image
+      backgroundRepeat: "repeat",  // or "no-repeat" depending on the image
+       }}
     >
     <img
       src={hypnos}
