@@ -8,7 +8,7 @@ export interface Text {
 export const texts: Text[] = [
   {
     type: "about",
-    description: "i am a software developer, and a recovering academic. my background is in literature, and i sometimes make art films. i have founded and run an independend arthouse cinema in malmö, sweden. i have also worked as a bicycle mechanic, barista, and actor-ish, just to name a few. i care about community, and i currently work part-time at rfsl's checkpoint, testing msm and trans people for hiv and syphilis. i enjoy running. i am an aquarius, which, according to an ex of mine, means i'm obsessed with freedom. well, i am.",
+    description: "i am a software developer, and a recovering academic. my background is in literature, and i sometimes make art films. i have founded and run an independend arthouse cinema in malmö, sweden. i have also worked as a bicycle mechanic, barista, and actor-ish, just to name a few. i care about community, and i currently work part-time at rfsl's checkpoint, testing msm and trans people for hiv and syphilis. i enjoy running. i am an aquarius, which supposedly means i'm obsessed with freedom. well, i am.",
   },
   {
     type: "cinema",
