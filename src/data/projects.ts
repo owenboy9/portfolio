@@ -29,7 +29,7 @@ export const projects: Project[] = [
   },
   {
     date: "2025",
-    description: "bubbly daily planner to help trick procrastination (sound)",
+    description: "bubbly daily planner to help trick procrastination (sound).",
     link: "https://zereis.github.io/Event-planner/#/spin",
     ghlink: "https://github.com/Zereis/Event-planner",
     image: spin,
@@ -37,7 +37,7 @@ export const projects: Project[] = [
   },
   {
     date: "2025",
-    description: "casino slot machine — a fun casino-themed web project (sound)",
+    description: "casino slot machine — a fun casino-themed web project (sound). test winning effects by pressing '1' or '2' or '3'",
     link: "https://owenboy9.github.io/casino/",
     ghlink: "https://github.com/owenboy9/casino",
     image: casino,
