@@ -7,6 +7,7 @@ import fleshmatterslong from "/assets/projects/fleshmatterslong.png";
 import fleshmattersshort from "/assets/projects/fleshmattersshort.png";
 import resume from "/assets/projects/resume.png";
 import arduino from "/assets/projects/arduino.png";
+import spin from "/assets/projects/spin.png";
 
 export interface Project {
   date: string;
@@ -24,6 +25,14 @@ export const projects: Project[] = [
     link: "https://owenboy9.github.io/cakery/",
     ghlink: "https://github.com/owenboy9/cakery",
     image: cakery,
+    type: "code",
+  },
+  {
+    date: "2025",
+    description: "fun daily planner with a randomization to help with your procrastination tendencies",
+    link: "https://zereis.github.io/Event-planner/#/spin",
+    ghlink: "https://github.com/Zereis/Event-planner",
+    image: spin,
     type: "code",
   },
   {
