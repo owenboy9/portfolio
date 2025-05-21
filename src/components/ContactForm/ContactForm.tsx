@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useForm, ValidationError } from '@formspree/react';
 
 const ContactForm = () => {
   const [email, setEmail] = useState("");
