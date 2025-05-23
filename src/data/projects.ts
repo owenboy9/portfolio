@@ -62,7 +62,7 @@ export const projects: Project[] = [
   {
     date: "2024",
     description: "gui and test flow for a research project at arduino",
-    link: "",
+    link: "https://owenboy9.github.io/arduinogui/",
     ghlink: "https://github.com/dcuartielles/temperature_chamber",
     image: arduino,
     type: "code",
