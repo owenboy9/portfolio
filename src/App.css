@@ -17,3 +17,390 @@ body {
 .text-shadow-hover:hover {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.63); 
 }
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 10rem 4rem 10rem;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+  color: black;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  gap: 1rem;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 80%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: 2px dotted black;
+  border-radius: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  font-family: inherit;
+}
+
+.contact-input:hover,
+.contact-textarea:hover {
+  transform: scale(1.03);
+}
+
+.contact-textarea {
+  height: 13rem;
+  resize: none;
+  padding-top: 3rem;
+}
+
+.contact-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  border: 2px dotted black;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.contact-button:hover {
+  transform: scale(1.05);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.project-card {
+  width: 14rem; /* ~240px, narrower than before */
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem; /* use rem for consistent scaling */
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('/assets/projects/dot_bg.avif');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-style: none;
+  margin: 0.68rem; /* add margin for gap between cards */
+  margin-left: 0;
+}
+
+.project-card:hover {
+  border-width: 2.5px;
+  border-style: dotted;
+  border-color: rgb(102, 102, 102);
+}
+
+.project-card-link {
+  display: block;
+  width: 100%;
+}
+
+.project-card-image {
+  width: 5rem; /* 80px in rem (1rem = 16px default) */
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 2rem auto 0 auto;
+}
+
+.project-card-text {
+  color: black;
+  text-align: center;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  /* no font-family or font-size to inherit */
+}
+
+.project-card-date {
+  font-size: 1.2rem;
+  color: #666666;
+  margin-bottom: 0.25rem;
+}
+
+.project-card-description {
+  font-size: 1.2rem;
+}
+
+.project-card-ghlink {
+  margin-top: 0.75rem;
+  display: flex;
+  justify-content: center;
+}
+
+.project-card-ghlogo {
+  width: 2rem;
+  display: block;
+}
+
+.sidebar {
+  position: fixed;
+  top: 4.5rem; /* or 0, or something smaller */
+  left: 1.3rem;
+  width: 13rem;
+  height: calc(100vh - 1rem); /* subtract the top offset */
+  z-index: 50;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 1.8rem;
+  color: black;
+}
+
+.sidebar-link {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  display: inline-block;
+  text-shadow: none;
+}
+
+.sidebar-link:hover {
+  transform: scale(1.06);
+}
+
+.sidebar-link.active {
+  color: black;
+  font-weight: 600;
+  /* Optionally add underline or shadow */
+  /* text-shadow: 0 0 2px rgba(0,0,0,0.3); */
+}
+
+.about-container {
+  margin-top: 2rem;
+  margin-left: 15rem;
+  margin-right: 10rem;
+  text-align: justify;
+}
+
+.about-description {
+  font-size: 1.3rem;
+}
+
+
+.cinema-container {
+  margin-top: 2rem;
+  margin-left: 15rem;
+  margin-right: 9rem; 
+  text-align: justify;
+}
+
+.cinema-description {
+  font-size: 1.3rem;
+}
+
+.section-title {
+  font-size: 1.5rem; /* text-2xl approx */
+  font-weight: bold;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.film-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 3rem; /* gap-y = 2rem, gap-x = 3rem */
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.contact-container {
+  margin-top: 2rem;
+  margin-left: 15rem;
+  margin-right: 9rem;
+  text-align: justify;
+}
+
+.contact-description {
+  font-size: 1.3rem;
+  margin-bottom: 5rem;
+}
+
+.contact-logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.contact-logo {
+  display: block;
+  width: 1.8rem;
+}
+
+.contact-logo.github {
+  width: 2rem;
+}
+
+.contact-button{
+  font-family: inherit;
+}
+
+
+/* Responsive: stack film projects on smaller screens */
+@media (max-width: 640px) {
+  .film-projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hypnos-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 4rem;
+  border: none;
+  border-radius: 1rem;
+  padding-top: 1rem;
+  height: fit-content;
+  background-image: url("/assets/projects/dot_bg.avif");
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+.hypnos-image {
+  width: 40%;
+  max-width: 800px;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* shadow-lg approx */
+}
+
+.hypnos-logo {
+  width: 4rem;
+}
+
+.code-container {
+  margin-top: 2rem;
+  margin-left: 15rem;
+  margin-right: 12rem;
+  text-align: justify;
+}
+
+/* This wrapper ensures independence from the grid layout */
+.code-description-wrapper {
+  max-width: 50ch; /* or 40ch, 60ch – whatever you feel is best */
+  margin-bottom: 2rem;
+}
+
+.code-description {
+  font-size: 1.3rem;
+}
+
+.section-title {
+  font-size: 1.5rem; /* equivalent to Tailwind's text-2xl */
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.code-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.9rem;
+  width: 100%;
+}
+
+
+/* Responsive: single column on small screens */
+@media (max-width: 640px) {
+  .code-projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Layout container: full viewport height, vertical flex */
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main area: flexible grow, row on medium+ screens */
+.layout-main {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+/* For medium screens and up, switch to row layout */
+@media (min-width: 768px) {
+  .layout-main {
+    flex-direction: row;
+  }
+}
+
+/* Main content area next to sidebar */
+.layout-content {
+  padding: 1.5rem; /* equals p-6 in Tailwind */
+  margin-left: 0;
+  width: 100%;
+}
+
+/* On medium screens and up, give space for sidebar */
+@media (min-width: 768px) {
+  .layout-content {
+    margin-left: 0;
+  }
+}
+
+
+/* === Responsive Design === */
+@media (max-width: 860px) {
+  .contact-form-container {
+    padding: 2rem;
+  }
+
+  .contact-input,
+  .contact-textarea {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .contact-button {
+    width: 100%;
+    font-size: 1rem;
+    font-family: inherit;
+  }
+}

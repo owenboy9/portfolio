@@ -1,14 +1,13 @@
-// src/components/Layout/Layout.tsx
 import { Outlet } from 'react-router-dom';
 import Sidebar from '../Sidebar/Sidebar';
 import Footer from '../Footer/Footer';
 
 const Layout = () => {
   return (
-    <div className="flex flex-col min-h-screen">
-      <div className="flex flex-grow">
+    <div className="layout-container">
+      <div className="layout-main">
         <Sidebar />
-        <main className="ml-48 p-6 w-full">
+        <main className="layout-content">
           <Outlet />
         </main>
       </div>
