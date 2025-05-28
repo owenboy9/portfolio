@@ -274,6 +274,43 @@ body {
 }
 
 
+.home-container {
+  margin-top: 2rem;
+  margin-left: 15rem;
+  margin-right: 10rem;
+  text-align: justify;
+}
+
+.home-description {
+  font-size: 1.3rem;
+}
+
+.literature-container {
+  margin-top: 2rem;
+  margin-left: 15rem;
+  margin-right: 9rem;
+  text-align: justify;
+}
+
+.literature-paragraph {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.literature-subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.literature-list {
+  font-size: 1.3rem;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+
 /* Responsive: stack film projects on smaller screens */
 @media (max-width: 640px) {
   .film-projects-grid {
