@@ -196,27 +196,20 @@ body {
 .sidebar-link.active {
   color: black;
   font-weight: 600;
-  /* Optionally add underline or shadow */
-  /* text-shadow: 0 0 2px rgba(0,0,0,0.3); */
 }
 
-.about-container {
+.page-container {
   margin-top: 2rem;
-  margin-left: 15rem;
-  margin-right: 10rem;
+  margin-right: clamp(9rem, 8vw, 20rem);
+
+  margin-left: calc(13rem + 1rem); /* fixed space for sidebar */
   text-align: justify;
 }
+
 
 .about-description {
   font-size: 1.3rem;
-}
-
-
-.cinema-container {
-  margin-top: 2rem;
-  margin-left: 15rem;
-  margin-right: 9rem; 
-  text-align: justify;
+  padding-right: 1rem;
 }
 
 .cinema-description {
@@ -236,13 +229,6 @@ body {
   gap: 2rem 3rem; /* gap-y = 2rem, gap-x = 3rem */
   margin-top: 1rem;
   width: 100%;
-}
-
-.contact-container {
-  margin-top: 2rem;
-  margin-left: 15rem;
-  margin-right: 9rem;
-  text-align: justify;
 }
 
 .contact-description {
@@ -274,22 +260,9 @@ body {
 }
 
 
-.home-container {
-  margin-top: 2rem;
-  margin-left: 15rem;
-  margin-right: 10rem;
-  text-align: justify;
-}
-
 .home-description {
   font-size: 1.3rem;
-}
-
-.literature-container {
-  margin-top: 2rem;
-  margin-left: 15rem;
-  margin-right: 9rem;
-  text-align: justify;
+  padding-right: 1rem;
 }
 
 .literature-paragraph {
@@ -308,14 +281,6 @@ body {
   font-size: 1.3rem;
   padding-left: 1.5rem;
   list-style-type: disc;
-}
-
-
-/* Responsive: stack film projects on smaller screens */
-@media (max-width: 640px) {
-  .film-projects-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .hypnos-container {
@@ -347,13 +312,6 @@ body {
   width: 4rem;
 }
 
-.code-container {
-  margin-top: 2rem;
-  margin-left: 15rem;
-  margin-right: 12rem;
-  text-align: justify;
-}
-
 /* This wrapper ensures independence from the grid layout */
 .code-description-wrapper {
   max-width: 50ch; /* or 40ch, 60ch – whatever you feel is best */
@@ -378,15 +336,6 @@ body {
   width: 100%;
 }
 
-
-/* Responsive: single column on small screens */
-@media (max-width: 640px) {
-  .code-projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
 /* Layout container: full viewport height, vertical flex */
 .layout-container {
   display: flex;
@@ -401,43 +350,208 @@ body {
   flex-direction: column;
 }
 
-/* For medium screens and up, switch to row layout */
-@media (min-width: 768px) {
-  .layout-main {
-    flex-direction: row;
-  }
-}
-
 /* Main content area next to sidebar */
 .layout-content {
   padding: 1.5rem; /* equals p-6 in Tailwind */
   margin-left: 0;
   width: 100%;
 }
-
-/* On medium screens and up, give space for sidebar */
-@media (min-width: 768px) {
-  .layout-content {
-    margin-left: 0;
-  }
-}
-
-
 /* === Responsive Design === */
-@media (max-width: 860px) {
-  .contact-form-container {
-    padding: 2rem;
+
+/* Small devices (phones, <640px) */
+@media (max-width: 639px) {
+  /* Sidebar: hide or collapse */
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    overflow: visible;
+    margin-bottom: 1rem;
+  }
+  .sidebar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.4rem;
+  }
+  .sidebar-link {
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
   }
 
+  /* Page container margins collapse, full width */
+  .page-container {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 1rem;
+    text-align: left;
+  }
+
+  /* Film projects: single column */
+  .film-projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Code projects: single column */
+  .code-projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Hypnos container: stack vertically */
+  .hypnos-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .hypnos-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Contact form full width inputs */
+  .contact-form-container {
+    padding: 2rem 1rem 3rem 1rem;
+  }
   .contact-input,
   .contact-textarea {
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
-
   .contact-button {
     width: 100%;
+    font-size: 1.1rem;
+  }
+
+  /* Text padding adjustments */
+  .about-description,
+  .home-description {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/* Medium devices (tablets, 640px - 860px) */
+@media (min-width: 640px) and (max-width: 860px) {
+  /* Sidebar becomes narrower or collapses */
+  .sidebar {
+    position: fixed;
+    width: 10rem;
+    height: calc(100vh - 1rem);
+    overflow-y: auto;
+  }
+  .sidebar-nav {
+    font-size: 1.6rem;
+  }
+  .sidebar-link {
+    padding: 0.25rem 0.4rem;
+  }
+
+  /* Page container margins adjust for sidebar */
+  .page-container {
+    margin-left: calc(10rem + 1rem);
+    margin-right: clamp(5rem, 6vw, 12rem);
+    padding: 0 1rem;
+  }
+
+  /* Film projects grid: 2 columns */
+  .film-projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 2rem;
+  }
+
+  /* Code projects grid: 2 columns */
+  .code-projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  /* Hypnos container: keep row but reduce gap */
+  .hypnos-container {
+    gap: 2rem;
+  }
+  .hypnos-image {
+    width: 50%;
+  }
+
+  /* Contact form inputs width */
+  .contact-input,
+  .contact-textarea {
+    width: 90%;
+  }
+  .contact-button {
+    width: auto;
+  }
+}
+
+/* Large devices (desktops, 861px and up) */
+@media (min-width: 861px) {
+  /* Sidebar fixed, full width */
+  .sidebar {
+    position: fixed;
+    width: 13rem;
+    height: calc(100vh - 1rem);
+    overflow-y: auto;
+  }
+  .sidebar-nav {
+    font-size: 1.8rem;
+  }
+  .sidebar-link {
+    padding: 0.25rem 0.5rem;
+  }
+
+  /* Page container margin accounts for sidebar */
+  .page-container {
+    margin-left: calc(13rem + 1rem);
+    margin-right: clamp(9rem, 8vw, 20rem);
+  }
+
+  /* Film projects grid: 3 columns */
+  .film-projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 3rem;
+  }
+
+  /* Code projects grid: 3 columns */
+  .code-projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.9rem;
+  }
+
+  /* Hypnos container: row with bigger gap */
+  .hypnos-container {
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .hypnos-image {
+    width: 40%;
+  }
+
+  /* Contact form inputs width */
+  .contact-input,
+  .contact-textarea {
+    width: 80%;
+    font-size: 1.1rem;
+  }
+  .contact-button {
+    width: auto;
+  }
+}
+
+/* Extra small devices (very small phones) - adjust font size */
+@media (max-width: 400px) {
+  body {
+    font-size: 1.4rem;
+  }
+  .sidebar-nav {
+    font-size: 1.2rem;
+  }
+  .contact-input,
+  .contact-textarea {
     font-size: 1rem;
-    font-family: inherit;
+  }
+  .contact-button {
+    font-size: 1rem;
   }
 }

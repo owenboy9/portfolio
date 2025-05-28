@@ -7,11 +7,9 @@ const codeProjects = projects.filter(p => p.type === 'code');
 
 const Code = () => {
   return (
-    <div className="code-container">
+    <div className="page-container">
       <h1>my code</h1>
-      <div className="code-description-wrapper">
-        <p className="code-description">{code?.description}</p>
-      </div>
+      <p className="code-description">{code?.description}</p>
 
       <h3 className="section-title">code projects</h3>
       <div className="code-projects-grid">

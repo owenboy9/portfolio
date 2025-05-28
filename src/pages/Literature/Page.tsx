@@ -5,7 +5,7 @@ const literature = texts.find((item) => item.type === 'literature');
 
 const Literature = () => {
   return (
-    <div className="literature-container">
+    <div className="page-container">
       <h1>my literature</h1>
 
       <p className="literature-paragraph">

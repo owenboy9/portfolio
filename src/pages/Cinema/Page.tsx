@@ -10,7 +10,7 @@ const cinema = texts.find((item) => item.type === 'cinema');
 
 const Cinema = () => {
   return (
-    <div className="cinema-container">
+    <div className="page-container">
       <h1>my cinema</h1>
       <p className="cinema-description">{cinema?.description}</p>
       

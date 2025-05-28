@@ -4,7 +4,7 @@ const home = texts.find((item) => item.type === 'home');
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <div className="page-container">
       <h1>owen kraus</h1>
       <p className="home-description">
         {home?.description}

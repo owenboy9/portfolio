@@ -7,7 +7,7 @@ const contact = texts.find((item) => item.type === 'contact');
 
 const Contact = () => {
   return (
-    <div className="contact-container">
+    <div className="page-container">
       <h1>reach out to me</h1>
       <p className="contact-description">
         {contact?.description}
