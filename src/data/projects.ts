@@ -3,6 +3,7 @@
 import cakery from "/assets/projects/cakery.jpg";
 import casino from "/assets/projects/casino.png";
 import mysite from "/assets/projects/mysite.jpeg";
+import logo_fim from "assets/projects/logo_fim.webp";
 import fleshmatterslong from "/assets/projects/fleshmatterslong.png";
 import fleshmattersshort from "/assets/projects/fleshmattersshort.png";
 import resume from "/assets/projects/resume.png";
@@ -24,7 +25,7 @@ export const projects: Project[] = [
     description: "a group project for an independent film association website",
     link: "https://film-i-malmo.vercel.app/",
     ghlink: "https://github.com/owenboy9/film-i-malmo",
-    image: cakery,
+    image: logo_fim,
     type: "code",
   },
   {
