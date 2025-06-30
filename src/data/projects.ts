@@ -21,6 +21,14 @@ export interface Project {
 export const projects: Project[] = [
   {
     date: "2025",
+    description: "a group project for an independent film association website",
+    link: "https://film-i-malmo.vercel.app/",
+    ghlink: "https://github.com/owenboy9/film-i-malmo",
+    image: cakery,
+    type: "code",
+  },
+  {
+    date: "2025",
     description: "a simple cute bakery-themed web project",
     link: "https://owenboy9.github.io/cakery/",
     ghlink: "https://github.com/owenboy9/cakery",
