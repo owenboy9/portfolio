@@ -3,12 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
   "homepage": "https://owenboy9.github.io/portfolio",
   "scripts": {
     "dev": "vite",
@@ -21,7 +15,8 @@
     "@tailwindcss/postcss": "^4.1.4",
     "@tailwindcss/postcss7-compat": "^2.2.17",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.6.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
