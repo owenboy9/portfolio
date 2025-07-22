@@ -24,7 +24,7 @@ export const texts: Text[] = [
   },
   {
     type: "home",
-    description: "welcome to explore all the different chapters i have set up for you here.",
+    description: "connect the dots",
   },
   {
     type: "literature",
